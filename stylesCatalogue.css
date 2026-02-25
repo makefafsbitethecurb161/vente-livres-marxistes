@@ -1,0 +1,65 @@
+.Title {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    background-color: white;
+    font-size: auto;
+}
+
+.image-header {
+    display: block;
+    margin: 0 ;
+    width: 205px;
+    height: auto;
+    position : absolute;
+    top: 0px;
+    left: 8%;
+    z-index: auto;
+}
+
+body
+{
+    font-family: 'Verdana', sans-serif;
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: white;
+}
+
+.Menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: white ;
+    margin-bottom: 20px;
+    align-items: stretch;
+    margin: 0px;
+    padding: 10px;
+}
+
+.Menu-1, .Menu-2, .Menu-3, .Menu-4 {
+    margin: 0px 0px;
+    padding: 10px 15px;
+    background-color: white;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    color: black;
+    font-size: 160%;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    border-color: #000000;
+    border: 1px solid black;
+    box-shadow: 0px 5px 4px grey;
+}
+
+.Menu-2 {
+    box-shadow: 0px 6px 0px red;
+}
+
+.Menu-1:hover, .Menu-2:hover, .Menu-3:hover, .Menu-4:hover {
+    background-color: #b8b8b8d2;
+}
