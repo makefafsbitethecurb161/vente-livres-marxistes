@@ -9,7 +9,7 @@
 
 <!-- 
 Pour lancer le serveur local :
-Ecrire 'PowerShell dans' le dossier du projet
+Ecrire 'PowerShell' dans le dossier du projet
 php -S localhost:8000
 
 lien vers le site : 
