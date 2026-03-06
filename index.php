@@ -18,8 +18,10 @@ http://localhost:8000/index.php
 
 <body>
 <header>
-    <div class="Title">
-        <h1>Bienvenue sur notre site de vente en ligne de livres marxistes</h1>
+    <div class="Title-bloc">
+        <div class="Title">
+            <h1>Bienvenue sur notre site de vente en ligne de livres marxistes</h1>
+        </div>
         <img src="../img/pngegg.png" alt="image 1" class="image-header">
     </div>
     <nav>
@@ -31,33 +33,39 @@ http://localhost:8000/index.php
         </ul>
     </nav>
 </header>
-<main>
-    <div class="livres-phares">
-        <h2>Nos livres phares</h2>
-        <article class="livre-phare-1">
-            <h3>Le Capital de Karl Marx</h3>
-            <p>Une analyse approfondie du système capitaliste et de ses contradictions.</p>
-        </article>
-        <article class="livre-phare-2">
-            <h3>Le Manifeste du Parti Communiste</h3>
-            <p>Un appel à l'action pour la classe ouvrière du monde entier.</p>
-        </article>
-        <article class="livre-phare-3">
-            <h3>L'état et la révolution</h3>
-            <p>Introduction à la critique de l'État et à la théorie de la révolution proletarienne.</p>
-        </article>
-    </div>
-    <div class="Nouveautes">
-        <h2>Nouveautés</h2>
-        <article class="nouveaute-1">
-            <h3>Le Marxisme de Gramsci</h3>
-            <p>Présentation de Antonio Gramsci et ses contributions au marxisme.</p>
-        </article>
-        <article class="nouveaute-2">
-            <h3>Les Femmes, la révolution et le socialisme</h3>
-            <p>Receuil de textes sur l'importance de la lutte féministe</p>
-        </article>
-    </div>
-</main>
+<div class="content-wrapper">
+    <main>
+        <div class="livres-phares">
+            <h2>Nos livres phares</h2>
+            <article class="livre-phare-1">
+                <h3>Le Capital de Karl Marx</h3>
+                <p>Une analyse approfondie du système capitaliste et de ses contradictions.</p>
+            </article>
+            <article class="livre-phare-2">
+                <h3>Le Manifeste du Parti Communiste</h3>
+                <p>Un appel à l'action pour la classe ouvrière du monde entier.</p>
+            </article>
+            <article class="livre-phare-3">
+                <h3>L'état et la révolution</h3>
+                <p>Introduction à la critique de l'État et à la théorie de la révolution proletarienne.</p>
+            </article>
+        </div>
+        <div class="Nouveautes">
+            <h2>Nouveautés</h2>
+            <article class="nouveaute-1">
+                <h3>Le Marxisme de Gramsci</h3>
+                <p>Présentation de Antonio Gramsci et ses contributions au marxisme.</p>
+            </article>
+            <article class="nouveaute-2">
+                <h3>Les Femmes, la révolution et le socialisme</h3>
+                <p>Receuil de textes sur l'importance de la lutte féministe</p>
+            </article>
+        </div>
+    </main>
+    <aside class="sideblock">
+        <h3>Informations</h3>
+        <p>Contenu du sidebar à personnaliser</p>
+    </aside>
+</div>
 </body>
 </html>

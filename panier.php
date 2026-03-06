@@ -8,8 +8,10 @@
 </head>
 <body>
 <header>
-    <div class="Title">
-        <h1>Bienvenue sur notre site de vente en ligne de livres marxistes</h1>
+    <div class="Title-bloc">
+        <div class="Title">
+            <h1>Bienvenue sur notre site de vente en ligne de livres marxistes</h1>
+        </div>
         <img src="../img/pngegg.png" alt="image 1" class="image-header">
     </div>
     <nav>

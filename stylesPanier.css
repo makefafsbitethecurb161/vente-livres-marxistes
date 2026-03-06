@@ -1,22 +1,23 @@
 .Title {
     text-align: center;
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto;
     font-family: 'Arial', sans-serif;
     color: #000000;
     background-color: white;
     font-size: auto;
+    position: relative;
+    width: fit-content;
 }
 
 .image-header {
-    display: block;
     margin: 0 ;
     width: 205px;
     height: auto;
     position : absolute;
     top: 0px;
     left: 8%;
-    z-index: auto;
+    z-index: -1;
 }
 
 body
@@ -42,7 +43,6 @@ body
     margin: 0px 0px;
     padding: 10px 15px;
     background-color: white;
-    display: flex;
     flex-grow: 1;
     align-items: center;
     color: black;

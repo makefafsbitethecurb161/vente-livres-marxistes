@@ -1,22 +1,23 @@
 .Title {
     text-align: center;
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto;
     font-family: 'Arial', sans-serif;
     color: #000000;
     background-color: white;
     font-size: auto;
+    position: relative;
+    width: fit-content;
 }
 
 .image-header {
-    display: block;
     margin: 0 ;
     width: 205px;
     height: auto;
     position : absolute;
     top: 0px;
     left: 8%;
-    z-index: auto;
+    z-index: -1;
 }
 
 body
@@ -42,7 +43,6 @@ body
     margin: 0px 0px;
     padding: 10px 15px;
     background-color: white;
-    display: flex;
     flex-grow: 1;
     align-items: center;
     color: black;
@@ -72,8 +72,42 @@ body
 }
 
 .livres-phares-1, .livres-phares-2, .livres-phares-3, .Nouveautes-1, .Nouveautes-2, .Nouveautes-3 {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 20px 0;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+main {
+    flex: 1;
+}
+
+.sideblock {
+    background-image: url('./img/img-lenin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 50%;
+    background-color: rgba(245, 245, 245, 0.05);
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sideblock {
+        width: 100%;
+    }
 }
