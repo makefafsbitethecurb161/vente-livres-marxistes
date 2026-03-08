@@ -63,3 +63,44 @@ body
 .Menu-1:hover, .Menu-2:hover, .Menu-3:hover, .Menu-4:hover {
     background-color: #b8b8b8d2;
 }
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.catalogue-main-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 40px 0; 
+}
+
+main {
+    flex: 1;
+}
+
+.sideblock {
+    background-image: url('./img/img-lenin.jpg');
+    background-size: cover;
+    background-position: right 85%;
+    width: 50%;
+    height: 670px;
+    background-color: rgba(245, 245, 245, 0.05);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sideblock {
+        width: 100%;
+    }
+}

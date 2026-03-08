@@ -62,10 +62,10 @@ http://localhost:8000/index.php
             </article>
         </div>
     </main>
-    <aside class="sideblock">
+    <div class="sideblock">
         <h3>Informations</h3>
-        <p>Contenu du sidebar à personnaliser</p>
-    </aside>
+        <p>Contenu du sidebar</p>
+    </div>
 </div>
 </body>
 </html>

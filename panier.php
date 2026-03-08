@@ -23,5 +23,21 @@
         </ul>
     </nav>
 </header>
+<div class="content-wrapper">
+    <main>
+        <div class="liste-panier">
+            <h2>Votre Panier</h2>
+            <article class="item-panier-1">
+                <h3>placeholder livre choisis</h3>
+                <p>Quantité : X</p>
+                <p>Prix : X€</p>
+            </article>
+        </div>
+    </main>
+    <div class="sideblock">
+        <h3>Informations</h3>
+        <p>Contenu du sidebar</p>
+    </div>
+</div>
 </body>
 </html>

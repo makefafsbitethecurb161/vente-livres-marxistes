@@ -64,6 +64,11 @@ body
     background-color: #b8b8b8d2;
 }
 
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
 .livres-phares, .Nouveautes {
     display: flex;
     flex-direction: column;
@@ -77,11 +82,6 @@ body
     margin: 20px 0;
 }
 
-.content-wrapper {
-    display: flex;
-    gap: 20px;
-}
-
 main {
     flex: 1;
 }
@@ -89,13 +89,12 @@ main {
 .sideblock {
     background-image: url('./img/img-lenin.jpg');
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: right 85%;
     width: 50%;
+    height: 670px;
     background-color: rgba(245, 245, 245, 0.05);
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;

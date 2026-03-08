@@ -23,5 +23,36 @@
         </ul>
     </nav>
 </header>
+<div class="content-wrapper">
+    <main>
+        <div class="catalogue-main-body">
+            <h2>Catalogue</h2>
+            <article class="livre-1">
+                <h3>Livre 1</h3>
+                <p>Placeholder</p>
+            </article>
+            <article class="livre-2">
+                <h3>Livre 2</h3>
+                <p>Placeholder</p>
+            </article>
+            <article class="livre-3">
+                <h3>Livre 3</h3>
+                <p>Placeholder</p>
+            </article>
+            <article class="livre-4">
+                <h3>Livre 4</h3>
+                <p>Placeholder</p>
+            </article>
+            <article class="livre-5">
+                <h3>Livre 5</h3>
+                <p>Placeholder</p>
+            </article>
+        </div>
+    </main>
+    <div class="sideblock">
+        <h3>Informations</h3>
+        <p>Contenu du sidebar</p>
+    </div>
+</div>
 </body>
 </html>
