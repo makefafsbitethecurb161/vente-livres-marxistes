@@ -37,35 +37,69 @@ http://localhost:8000/index.php
     <main>
         <div class="livres-phares">
             <h2>Nos livres phares</h2>
-            <article class="livre-phare-1">
+            <article class="livre-phare-1" 
+                    data-sidebar-title="Le Capital" 
+                    data-sidebar-text="Un aperçu des fondements de l'économie politique et de la critique du capitalisme."
+                    data-sidebar-img="./img/Livres/DAS-KAPITAL.jpg">
                 <h3>Le Capital de Karl Marx</h3>
                 <p>Une analyse approfondie du système capitaliste et de ses contradictions.</p>
             </article>
-            <article class="livre-phare-2">
+            <article class="livre-phare-2" 
+                    data-sidebar-title="Le Manifeste du Parti Communiste" 
+                    data-sidebar-text="Découvrez l'appel historique à l'unité de la classe ouvrière et l'abolition de la propriété privée."
+                    data-sidebar-img="./img/Livres/COMUNIST-MANIFESTO.webp">
                 <h3>Le Manifeste du Parti Communiste</h3>
                 <p>Un appel à l'action pour la classe ouvrière du monde entier.</p>
             </article>
-            <article class="livre-phare-3">
+            <article class="livre-phare-3" 
+                    data-sidebar-title="L'état et la révolution" 
+                    data-sidebar-text="Lire la critique de l'État bourgeois et les raisons d'une révolution prolétarienne."
+                    data-sidebar-img="./img/Livres/STATE-AND-REVOLUTION.jpg">
                 <h3>L'état et la révolution</h3>
                 <p>Introduction à la critique de l'État et à la théorie de la révolution proletarienne.</p>
             </article>
         </div>
         <div class="Nouveautes">
             <h2>Nouveautés</h2>
-            <article class="nouveaute-1">
+            <article class="nouveaute-1" 
+                    data-sidebar-title="Gramsci et la théorie" 
+                    data-sidebar-text="Explorez les idées d'Antonio Gramsci sur l'hégémonie culturelle et la stratégie révolutionnaire."
+                    data-sidebar-img="./img/Livres/GRAMSCI-AND-THEORY.jpg">
                 <h3>Le Marxisme de Gramsci</h3>
                 <p>Présentation de Antonio Gramsci et ses contributions au marxisme.</p>
             </article>
-            <article class="nouveaute-2">
+            <article class="nouveaute-2" 
+                    data-sidebar-title="Féminisme et révolution" 
+                    data-sidebar-text="Un recueil essentiel sur l'intersection du mouvement féminin et de la lutte socialiste."
+                    data-sidebar-img="./img/Livres/FEMINISM-AND-REVOLUTION.jpg">
                 <h3>Les Femmes, la révolution et le socialisme</h3>
-                <p>Receuil de textes sur l'importance de la lutte féministe</p>
+                <p>Receuil de textes sur l'importance de la lutte féministe.</p>
             </article>
         </div>
     </main>
-    <div class="sideblock">
+    <div id="sideblock" class="sideblock">
         <h3>Informations</h3>
         <p>Contenu du sidebar</p>
     </div>
 </div>
+
+<script>
+    const sideblock = document.getElementById('sideblock');
+    const articles = document.querySelectorAll('main article');
+
+    articles.forEach(article => {
+        article.addEventListener('click', () => {
+            const title = article.dataset.sidebarTitle || 'Informations';
+            const text = article.dataset.sidebarText || 'Cliquez sur un livre pour afficher des détails spécifiques.';
+            const img = article.dataset.sidebarImg || '';
+            sideblock.innerHTML = `<h3>${title}</h3><p>${text}</p><img src="${img}" alt="Image du livre">`;
+
+            // Exemple de modification visuelle différente par article
+            sideblock.style.backgroundColor = article.dataset.sidebarColor || 'rgba(245, 245, 245, 0.05)';
+            sideblock.style.color = '#333';
+            sideblock.style.borderRadius = '8px';
+        });
+    });
+</script>
 </body>
 </html>

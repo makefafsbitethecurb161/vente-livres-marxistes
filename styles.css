@@ -76,6 +76,20 @@ body
     margin: 40px 0;
 }
 
+main article {
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main article:hover {
+    box-shadow: 0px 8px 6px gray;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
 .livres-phares-1, .livres-phares-2, .livres-phares-3, .Nouveautes-1, .Nouveautes-2, .Nouveautes-3 {
     flex-direction: row;
     justify-content: space-around;
@@ -99,6 +113,15 @@ main {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
     z-index: 1;
+}
+
+.sideblock img {
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    z-index: 10;
 }
 
 @media (max-width: 768px) {
