@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'concrete';
+    src: url('./img/Fonts/concrete/Concrete.ttf') format('truetype');
+
+    font-family: 'franzo';
+    src: url('./img/Fonts/franzo/Franzo-E4GA.ttf') format('truetype');
+}
+
 .Title {
     text-align: center;
     padding: 10px;
     margin: 10px auto;
-    font-family: 'Arial', sans-serif;
+    font-family: 'concrete', sans-serif;
     color: #000000;
     background-color: white;
     font-size: auto;
@@ -22,7 +30,7 @@
 
 body
 {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'franzo', sans-serif;
     margin: 0px;
     padding: 0px 10px;
     background-color: white;

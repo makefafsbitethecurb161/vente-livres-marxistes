@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'concrete';
+    src: url('./img/Fonts/concrete/Concrete.ttf') format('truetype');
+
+    font-family: 'franzo';
+    src: url('./img/Fonts/franzo/Franzo-E4GA.ttf') format('truetype');
+}
+
 .Title {
     text-align: center;
     padding: 10px;
     margin: 10px auto;
-    font-family: 'Arial', sans-serif;
+    font-family: 'concrete', sans-serif;
     color: #000000;
     background-color: white;
     font-size: auto;
@@ -22,7 +30,7 @@
 
 body
 {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'franzo', sans-serif;
     margin: 0px;
     padding: 0px 10px;
     background-color: white;
@@ -88,6 +96,7 @@ main article:hover {
     box-shadow: 0px 8px 6px gray;
     transform: translateY(-2px);
     transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
 .livres-phares-1, .livres-phares-2, .livres-phares-3, .Nouveautes-1, .Nouveautes-2, .Nouveautes-3 {
@@ -115,14 +124,25 @@ main {
     z-index: 1;
 }
 
+.sidebar-content {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.sidebar-text {
+    flex: 1;
+}
+
 .sideblock img {
-    max-width: 200px;
-    height: auto;
+    width: 350px;
+    height: 550px;
     margin-top: 10px;
     display: block;
     position: relative;
     z-index: 10;
 }
+
 
 @media (max-width: 768px) {
     .content-wrapper {

@@ -16,6 +16,10 @@ lien vers le site :
 http://localhost:8000/index.php
 -->
 
+<!--
+AJOUTER REF A BDD
+-->
+
 <body>
 <header>
     <div class="Title-bloc">
@@ -47,7 +51,7 @@ http://localhost:8000/index.php
             <article class="livre-phare-2" 
                     data-sidebar-title="Le Manifeste du Parti Communiste" 
                     data-sidebar-text="Découvrez l'appel historique à l'unité de la classe ouvrière et l'abolition de la propriété privée."
-                    data-sidebar-img="./img/Livres/COMUNIST-MANIFESTO.webp">
+                    data-sidebar-img="./img/Livres/COMUNIST-MANIFESTO.jpg">
                 <h3>Le Manifeste du Parti Communiste</h3>
                 <p>Un appel à l'action pour la classe ouvrière du monde entier.</p>
             </article>
@@ -92,12 +96,13 @@ http://localhost:8000/index.php
             const title = article.dataset.sidebarTitle || 'Informations';
             const text = article.dataset.sidebarText || 'Cliquez sur un livre pour afficher des détails spécifiques.';
             const img = article.dataset.sidebarImg || '';
-            sideblock.innerHTML = `<h3>${title}</h3><p>${text}</p><img src="${img}" alt="Image du livre">`;
-
-            // Exemple de modification visuelle différente par article
-            sideblock.style.backgroundColor = article.dataset.sidebarColor || 'rgba(245, 245, 245, 0.05)';
-            sideblock.style.color = '#333';
-            sideblock.style.borderRadius = '8px';
+            sideblock.innerHTML = `<div class="sidebar-content">
+                                        <img src="${img}" alt="Image du livre" class="sidebar-image-livre">
+                                        <div class="sidebar-text">
+                                            <h3>${title}</h3>
+                                            <p>${text}</p>
+                                        </div>
+                                    </div>`;
         });
     });
 </script>
