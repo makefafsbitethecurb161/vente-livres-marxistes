@@ -34,10 +34,7 @@
             </article>
         </div>
     </main>
-    <div class="sideblock">
-        <h3>Informations</h3>
-        <p>Contenu du sidebar</p>
-    </div>
+    <div class="sideblock"> </div>
 </div>
 </body>
 </html>

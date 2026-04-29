@@ -1,0 +1,42 @@
+create database if not exist 'db_site_vente_en_ligne';
+use 'db_site_vente_en_ligne';
+
+create table if not exist 'livre' (
+    id_livre int not null auto_increment,
+    titre varchar(255) not null,
+    prix decimal(4, 2) not null,
+    img_url varchar(255) not null,
+    txt_description text,
+    txt_description2 text,
+    txt_resume text,
+    constraint pk_livre primary key (id_livre)
+);
+
+create table if not exist 'utilisateur' (
+    id_utilisateur int auto_increment,
+    nom varchar(255) not null,
+    email varchar(255) not null unique,
+    mot_de_passe varchar(255) not null,
+    constraint pk_utilisateur primary key (id_utilisateur)
+);
+
+create table if not exist 'panier' (
+    id_panier int not null auto_increment,
+    utilisateur_id int not null,
+    livre_id int not null,
+    quantite int,
+    constraint pk_panier primary key (id_panier),
+    constraint fk_utilisateur_panier foreign key (utilisateur_id) references utilisateur(id_utilisateur),
+    constraint fk_livre_panier foreign key (livre_id) references livre(id_livre)
+);
+
+create table if not exist 'commande' (
+    id_commande int not null auto_increment,
+    panier_id int not null,
+    est_commandee bool,
+    date_commande date,
+    constraint pk_commande primary key (id_commande),
+    constraint fk_panier_commande foreign key (panier_id) references panier(id_panier)
+);
+
+

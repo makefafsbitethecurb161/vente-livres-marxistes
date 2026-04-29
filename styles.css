@@ -143,6 +143,16 @@ main {
     z-index: 10;
 }
 
+.sidebar-quatrieme-de-couverture {
+    background-color: rgba(201, 199, 199, 0.7);
+    padding : 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.sidebar-quatrieme-de-couverture h4 {
+    margin: 0;
+}
 
 @media (max-width: 768px) {
     .content-wrapper {
