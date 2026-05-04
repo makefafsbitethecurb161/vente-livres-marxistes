@@ -16,10 +16,6 @@ lien vers le site :
 http://localhost:8000/index.php
 -->
 
-<!--
-AJOUTER REF A BDD
--->
-
 <body>
 <header>
     <div class="Title-bloc">
