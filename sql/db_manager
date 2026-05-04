@@ -19,3 +19,13 @@ function getDbConnection(): PDO
     return new PDO($dsn, DB_USER, DB_PASS, $options);
 }
 
+// Checks if adding another livre with est_a_la_une = true is allowed (max 3)
+function canAddEstALaUne(): bool
+{
+    $pdo = getDbConnection();
+    $stmt = $pdo->prepare("SELECT COUNT(*) as count FROM livre WHERE est_a_la_une = 1");
+    $stmt->execute();
+    $result = $stmt->fetch();
+    return $result['count'] < 3;
+}
+

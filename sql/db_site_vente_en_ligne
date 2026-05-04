@@ -1,11 +1,14 @@
 create database if not exist 'db_site_vente_en_ligne';
 use 'db_site_vente_en_ligne';
 
+
 create table if not exist 'livre' (
     id_livre int not null auto_increment,
     titre varchar(255) not null,
     prix decimal(4, 2) not null,
     img_url varchar(255) not null,
+    est_a_la_une boolean,
+    date_publication date,
     txt_description text,
     txt_description2 text,
     txt_resume text,
@@ -33,10 +36,36 @@ create table if not exist 'panier' (
 create table if not exist 'commande' (
     id_commande int not null auto_increment,
     panier_id int not null,
-    est_commandee bool,
+    est_commandee boolean,
     date_commande date,
     constraint pk_commande primary key (id_commande),
     constraint fk_panier_commande foreign key (panier_id) references panier(id_panier)
 );
 
 
+
+
+
+-- region #constraints
+
+CREATE TRIGGER check_est_a_la_une_insert BEFORE INSERT ON livre
+FOR EACH ROW
+BEGIN
+    IF NEW.est_a_la_une = 1 THEN
+        IF (SELECT COUNT(*) FROM livre WHERE est_a_la_une = 1) >= 3 THEN
+            SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = "Il est impossible d'avoir plus de 3 livres à la une";
+        END IF;
+    END IF;
+END;
+
+CREATE TRIGGER check_est_a_la_une_update BEFORE UPDATE ON livre
+FOR EACH ROW
+BEGIN
+    IF NEW.est_a_la_une = 1 AND OLD.est_a_la_une = 0 THEN
+        IF (SELECT COUNT(*) FROM livre WHERE est_a_la_une = 1) >= 3 THEN
+            SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = "Il est impossible d'avoir plus de 3 livres à la une";
+        END IF;
+    END IF;
+END;
+
+-- #endregion

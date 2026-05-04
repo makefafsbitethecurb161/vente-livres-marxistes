@@ -8,6 +8,7 @@ class Livre {
     private string $txt_description2;
     private string $txt_resume;
     private string $img_url;
+    private bool $est_a_la_une;
 
     public function __construct(
         int $id, 
@@ -17,7 +18,9 @@ class Livre {
         string $txt_description = '',
         string $txt_description2 = '',
         string $txt_resume = '',
-        string $img_url = ''
+        string $img_url = '',
+        bool $est_a_la_une = false,
+        DateTime $date_publication = new DateTime()
     ) 
     {
         $this->id = $id;
@@ -27,6 +30,8 @@ class Livre {
         $this->txt_description2 = $txt_description2;
         $this->txt_resume = $txt_resume;
         $this->img_url = $img_url;
+        $this->est_a_la_une = $est_a_la_une;
+        $this->date_publication = $date_publication;
     }
 
     // Getters
@@ -37,6 +42,8 @@ class Livre {
     public function getTxtDescription2() : string { return $this->txt_description2; }
     public function getTxtResume() : string { return $this->txt_resume; }
     public function getImgUrl() : string { return $this->img_url; }
+    public function getEstALaUne() : bool { return $this->est_a_la_une; }
+    public function getDatePublication() : DateTime { return $this->date_publication; }
 
     // Setters
     public function setTitre(string $titre) : void { $this->titre = $titre; }
@@ -45,6 +52,9 @@ class Livre {
     public function setTxtDescription2(string $txt_description2) : void { $this->txt_description2 = $txt_description2; }
     public function setTxtResume(string $txt_resume) : void { $this->txt_resume = $txt_resume; }
     public function setImgUrl(string $img_url) : void { $this->img_url = $img_url; }
+    public function setEstALaUneFalse(bool $est_a_la_une) : void { $this->est_a_la_une = false; }
+    public function setEstALaUneTrue(bool $est_a_la_une) : void { $this->est_a_la_une = true; }
+    public function setDatePublication(DateTime $date_publication) : void { $this->date_publication = $date_publication; }
 }
 
 ?>

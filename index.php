@@ -42,7 +42,7 @@ http://localhost:8000/index.php
                     data-sidebar-text="Un aperçu des fondements de l'économie politique et de la critique du capitalisme."
                     data-sidebar-img="./img/Livres/DAS-KAPITAL.jpg"
                     data-sidebar-Qdc="“Le capitalisme n'a aucune valeur historique, aucun droit historique à la vie, aucune raison d'être sociale, qu'autant qu'il fonctionne comme capital personnifié. Ce n'est qu'à ce titre que la nécessité transitoire de sa propre existence est impliquée dans la nécessité transitoire du mode de production capitaliste. Le but déterminant de son activité n'est donc ni la valeur d'usage ni la jouissance, mais bien la valeur d'échange et son accroissement continu. Agent fanatique de l'accumulation, il force les hommes, sans merci ni trêve, à produire pour produire, et les pousse ainsi instinctivement à développer les puissances productrices et les conditions matérielles qui seules peuvent former la base d'une société nouvelle et supérieure. Le capitaliste n'est respectable qu'autant qu'il est le capital fait homme. Dans ce rôle il est, lui aussi, comme le thésauriseur, dominé par sa passion aveugle pour la richesse abstraite, la valeur. Mais ce qui chez l'un paraît être une manie individuelle est chez l'autre l'effet du mécanisme social dont il n'est qu'un rouage.”">
-                <h3>Le Capital de Karl Marx</h3>
+                <h3>Le Capital</h3>
                 <p>Une analyse approfondie du système capitaliste et de ses contradictions.</p>
             </article>
             <article class="livre-phare-2" 
@@ -77,7 +77,7 @@ http://localhost:8000/index.php
                     data-sidebar-text="Un recueil essentiel sur l'intersection du mouvement féminin et de la lutte socialiste."
                     data-sidebar-img="./img/Livres/FEMINISM-AND-REVOLUTION.jpg"
                     data-sidebar-Qdc="“ De la Commune de Paris à la révolution russe, des générations de marxistes et de militant·es ont lutté pour l'émancipation des femmes, en articulant leurs luttes à celles du monde du travail. Si au cours du XXe siècle, ce féminisme socialiste s'est imposé comme un courant théorique et politique majeur, il est aujourd'hui largement méconnu. Ces textes fondateurs de Karl Marx, Friedrich Engels, Eleanor Marx, Clara Zetkin, Rosa Luxemburg, Inès Armand, Alexandra Kollontaï, Lénine et Léon Trotsky, dont certains étaient jusqu'alors inédits en français, sont pour la première fois rassemblés dans un même recueil. Ils sont introduits par Josefina Martínez et Diana Assunção qui retracent l'histoire de ce courant, discutent ses apports au regard des débats féministes contemporains et appellent à renouer avec le féminisme socialiste, dans une perspective anticapitaliste et anti-impérialiste. Josefina Martinez et Diana Assunção sont militantes féministes et révolutionnaires, membres du collectif international Du pain et des roses (Pan y Rosas)”">
-                <h3>Les Femmes, la révolution et le socialisme</h3>
+                <h3>Les Femmes, la révolution, le socialisme</h3>
                 <p>Receuil de textes sur l'importance de la lutte féministe.</p>
             </article>
         </div>
