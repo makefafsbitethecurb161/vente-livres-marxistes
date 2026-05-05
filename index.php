@@ -65,7 +65,7 @@ http://localhost:8000/index.php
         <div class="Nouveautes">
             <h2>Nouveautés</h2>
             <article class="nouveaute-1" 
-                    data-sidebar-title="Gramsci et la théorie" 
+                    data-sidebar-title="Le Marxisme de Gramsci" 
                     data-sidebar-text="Explorez les idées d'Antonio Gramsci sur l'hégémonie culturelle et la stratégie révolutionnaire."
                     data-sidebar-img="./img/Livres/GRAMSCI-AND-THEORY.jpg"
                     data-sidebar-Qdc="“Antonio Gramsci s'est imposé comme un penseur incontournable du XXe siècle, au point qu'il semble aujourd'hui repris par l'ensemble du spectre politique. À partir d'une lecture des Cahiers de prison, Juan Dal Maso reconstruit la cohérence de sa pensée et montre que cette dernière ne se laisse ni démembrer ni extraire de son cadre marxiste et révolutionnaire. L'auteur examine en particulier la notion d'hégémonie et en propose une relecture originale à partir de ses relations avec la théorie de la révolution permanente, formulée en particulier par Léon Trotsky. Cet essai rigoureux et concis s'adresse aussi bien à celui qui découvre Gramsci qu'au connaisseur de son œuvre. Il intéressera tous ceux qui se demandent si le marxisme de Gramsci peut encore nous guider sur les voies de la révolution aujourd'hui.”">
@@ -73,7 +73,7 @@ http://localhost:8000/index.php
                 <p>Présentation de Antonio Gramsci et ses contributions au marxisme.</p>
             </article>
             <article class="nouveaute-2" 
-                    data-sidebar-title="Féminisme et révolution" 
+                    data-sidebar-title="Les Femmes, la révolution, le socialisme" 
                     data-sidebar-text="Un recueil essentiel sur l'intersection du mouvement féminin et de la lutte socialiste."
                     data-sidebar-img="./img/Livres/FEMINISM-AND-REVOLUTION.jpg"
                     data-sidebar-Qdc="“ De la Commune de Paris à la révolution russe, des générations de marxistes et de militant·es ont lutté pour l'émancipation des femmes, en articulant leurs luttes à celles du monde du travail. Si au cours du XXe siècle, ce féminisme socialiste s'est imposé comme un courant théorique et politique majeur, il est aujourd'hui largement méconnu. Ces textes fondateurs de Karl Marx, Friedrich Engels, Eleanor Marx, Clara Zetkin, Rosa Luxemburg, Inès Armand, Alexandra Kollontaï, Lénine et Léon Trotsky, dont certains étaient jusqu'alors inédits en français, sont pour la première fois rassemblés dans un même recueil. Ils sont introduits par Josefina Martínez et Diana Assunção qui retracent l'histoire de ce courant, discutent ses apports au regard des débats féministes contemporains et appellent à renouer avec le féminisme socialiste, dans une perspective anticapitaliste et anti-impérialiste. Josefina Martinez et Diana Assunção sont militantes féministes et révolutionnaires, membres du collectif international Du pain et des roses (Pan y Rosas)”">
