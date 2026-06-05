@@ -1,21 +1,28 @@
-create database if not exist 'db_site_vente_en_ligne';
+create database if not exists 'db_site_vente_en_ligne';
 use 'db_site_vente_en_ligne';
 
 
-create table if not exist 'livre' (
+create table if not exists 'livre' (
     id_livre int not null auto_increment,
     titre varchar(255) not null,
     prix decimal(4, 2) not null,
     img_url varchar(255) not null,
     est_a_la_une boolean,
     date_publication date,
-    txt_description text,
-    txt_description2 text,
-    txt_resume text,
     constraint pk_livre primary key (id_livre)
 );
 
-create table if not exist 'utilisateur' (
+create table if not exists 'description_livre' (
+    id_description int not null auto_increment,
+    id_livre int not null,
+    txt_description text,
+    txt_description2 text,
+    txt_resume text,
+    constraint pk_description primary key (id_description),
+    constraint fk_livre_description foreign key (id_livre) references livre(id_livre)
+);
+
+create table if not exists 'utilisateur' (
     id_utilisateur int auto_increment,
     nom varchar(255) not null,
     prenom varchar(255) not null,
@@ -24,28 +31,25 @@ create table if not exist 'utilisateur' (
     constraint pk_utilisateur primary key (id_utilisateur)
 );
 
-create table if not exist 'panier' (
+create table if not exists 'panier' (
     id_panier int not null auto_increment,
-    utilisateur_id int not null,
-    livre_id int not null,
-    quantite int,
+    id_utilisateur int not null,
+    id_livre int not null,
+    quantite int default 1,
     constraint pk_panier primary key (id_panier),
-    constraint livre_id primary key (livre_id),
-    constraint fk_utilisateur_panier foreign key (utilisateur_id) references utilisateur(id_utilisateur),
-    constraint fk_livre_panier foreign key (livre_id) references livre(id_livre)
+    constraint uq_utilisateur_livre unique (id_utilisateur, id_livre),
+    constraint fk_utilisateur_panier foreign key (id_utilisateur) references utilisateur(id_utilisateur),
+    constraint fk_livre_panier foreign key (id_livre) references livre(id_livre)
 );
 
-create table if not exist 'commande' (
+create table if not exists 'commande' (
     id_commande int not null auto_increment,
-    panier_id int not null,
-    est_commandee boolean,
+    id_panier int not null,
+    est_commandee boolean default false,
     date_commande date,
     constraint pk_commande primary key (id_commande),
-    constraint fk_panier_commande foreign key (panier_id) references panier(id_panier)
+    constraint fk_panier_commande foreign key (id_panier) references panier(id_panier)
 );
-
-
-
 
 
 -- region #constraints
